@@ -30,6 +30,10 @@ public class DataStore {
     }
 
     public String showInfo() {
-        return companies[0].toString() + companies[1].toString() + companies[2].toString();
+        String company = null;
+        for (int i = 0; i < companiesNumber; i++) {
+             company += "\n" + companies[i].toString();
+        }
+        return company;
     }
 }
