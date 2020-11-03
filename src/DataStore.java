@@ -18,7 +18,7 @@ public class DataStore {
     }
 
     public void tryToFillTable() {
-    while (companiesNumber < MAX_COMPANIES){
+        while (companiesNumber < MAX_COMPANIES){
             Company company = add();
             if (Arrays.asList(companies).contains(company)) {
                 System.out.println("Duplikat");
